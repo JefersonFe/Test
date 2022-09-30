@@ -1,13 +1,14 @@
 //
 //  ViewController.swift
-//  PrimeiroDesafioTextField
+//  PrimeiroDesafioTextFieldDelegate
 //
-//  Created by JEFERSON FERREIRA on 27/09/22.
+//  Created by Caio Fabrini on 27/09/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
+
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         registerButton.isEnabled = false
         view.backgroundColor = .orange
         nameTextField.placeholder = "Digite seu nome:"
-        addressTextField.placeholder = "Digite o seu endereço:"
+        addressTextField.placeholder = "Digite seu endereço:"
         passwordTextField.placeholder = "Digite sua senha:"
         
         nameTextField.delegate = self
@@ -43,20 +44,44 @@ class ViewController: UIViewController {
         passwordTextField.layer.borderWidth = 2
         passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
         
-        registerButton .setTitle("Cadastrar", for: .normal)
+        registerButton.setTitle("Cadastrar", for: .normal)
         registerButton.backgroundColor = .systemBlue
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        
     }
-    
-    
+
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
-        print("Cadastro realizado com sucesso" )
+       print("Cadastro realizado com sucesso")
     }
     
-    extension ViewController: UITextFieldDelegate {
     
+    
+}
+//
+extension ViewController: UITextFieldDelegate {
+    
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.systemBlue.cgColor
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.hasText {
+            textField.layer.borderColor = UIColor.lightGray.cgColor
+        } else {
+            textField.layer.borderColor = UIColor.red.cgColor
+        }
         
+        if nameTextField.text == "" || addressTextField.text == "" || passwordTextField.text == "" {
+            registerButton.isEnabled = false
+        } else {
+            registerButton.isEnabled = true
+        }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }
