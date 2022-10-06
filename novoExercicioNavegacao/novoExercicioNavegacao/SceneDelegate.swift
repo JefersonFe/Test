@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  exercicioNavegacao
+//  novoExercicioNavegacao
 //
 //  Created by JEFERSON FERREIRA on 06/10/22.
 //
