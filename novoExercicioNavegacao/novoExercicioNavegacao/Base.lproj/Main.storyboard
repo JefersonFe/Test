@@ -21,7 +21,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="rDk-Px-gEz" kind="show" id="ajN-ya-Bpb"/>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiB-tO-1sU"/>
+                                    <segue destination="rDk-Px-gEz" kind="show" identifier="tela02" id="ajN-ya-Bpb"/>
                                 </connections>
                             </button>
                         </subviews>
