@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioTransicaoDeDados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eH1-jY-z7w">
+                                <rect key="frame" x="20" y="99" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a sua idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-1n-gEc">
+                                <rect key="frame" x="20" y="247" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a sua profissão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Cj-sc-weV">
+                                <rect key="frame" x="20" y="321" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o seu sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-P8-gAO">
+                                <rect key="frame" x="20" y="173" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6hy-1n-gEc" firstAttribute="top" secondItem="gyE-P8-gAO" secondAttribute="bottom" constant="40" id="0jx-fc-xPm"/>
+                            <constraint firstItem="eH1-jY-z7w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5lb-o7-lrh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eH1-jY-z7w" secondAttribute="trailing" constant="20" id="AAb-7Y-X3S"/>
+                            <constraint firstItem="eH1-jY-z7w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="IXZ-mT-z5Z"/>
+                            <constraint firstItem="gyE-P8-gAO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PmJ-vF-0Hx"/>
+                            <constraint firstItem="eH1-jY-z7w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vdk-xM-7ix"/>
+                            <constraint firstItem="gyE-P8-gAO" firstAttribute="top" secondItem="eH1-jY-z7w" secondAttribute="bottom" constant="40" id="XZV-YW-roE"/>
+                            <constraint firstItem="1Cj-sc-weV" firstAttribute="top" secondItem="6hy-1n-gEc" secondAttribute="bottom" constant="40" id="cQq-Wg-jRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Cj-sc-weV" secondAttribute="trailing" constant="20" id="n4W-Jw-JNd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6hy-1n-gEc" secondAttribute="trailing" constant="20" id="pDm-Ll-3cx"/>
+                            <constraint firstItem="gyE-P8-gAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pQh-Nk-sZB"/>
+                            <constraint firstItem="6hy-1n-gEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tIv-c5-gkK"/>
+                            <constraint firstItem="1Cj-sc-weV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tfm-Z1-eUZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gyE-P8-gAO" secondAttribute="trailing" constant="20" id="va2-uI-rXq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="8bC-Xf-vdC" id="pFh-eF-x8s"/>
+                        <outlet property="lastNameTextField" destination="gyE-P8-gAO" id="y47-3n-gQn"/>
+                        <outlet property="nameTextField" destination="eH1-jY-z7w" id="toD-JS-yPp"/>
+                        <outlet property="professionTextField" destination="1Cj-sc-weV" id="WkN-Kk-zup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
