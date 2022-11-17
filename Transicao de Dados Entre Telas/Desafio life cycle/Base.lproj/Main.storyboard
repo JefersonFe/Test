@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsX-6A-bxv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsX-6A-bxv">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tela Root-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_life_cycle" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,53 +17,104 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U96-FI-CT9">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="155.33333333333334" y="404.66666666666669" width="79.333333333333343" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
                                 <connections>
                                     <action selector="tappedSendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KqK-9o-nfe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2j-lf-g9x">
+                                <rect key="frame" x="20" y="489.66666666666669" width="350" height="35.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 03"/>
+                                <connections>
+                                    <action selector="GoScreen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jte-Je-Vyk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khg-bJ-Zdm">
+                                <rect key="frame" x="20" y="131" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ubp-C8-DlX">
+                                <rect key="frame" x="20" y="235" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe o seu nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-6a-Nru">
+                                <rect key="frame" x="20" y="97" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe o seu sobrenome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-4z-Eog">
+                                <rect key="frame" x="20" y="205" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="Khg-bJ-Zdm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2sl-nZ-AmZ"/>
+                            <constraint firstItem="Khg-bJ-Zdm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5ld-uS-c99"/>
+                            <constraint firstItem="E2j-lf-g9x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5ma-Fm-Ajc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E2j-lf-g9x" secondAttribute="trailing" constant="20" id="8fF-ni-Zv3"/>
                             <constraint firstItem="U96-FI-CT9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8li-x3-6zG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tlh-6a-Nru" secondAttribute="trailing" constant="20" id="AWK-FD-KDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ubp-C8-DlX" secondAttribute="trailing" constant="20" id="F9S-mi-zkA"/>
+                            <constraint firstItem="Tlh-6a-Nru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HFY-zk-6o7"/>
+                            <constraint firstItem="4jb-4z-Eog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ISF-yf-y0e"/>
+                            <constraint firstItem="Tlh-6a-Nru" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="IaI-15-p2Y"/>
+                            <constraint firstItem="4jb-4z-Eog" firstAttribute="top" secondItem="Khg-bJ-Zdm" secondAttribute="bottom" constant="40" id="OIQ-5Y-NlN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4jb-4z-Eog" secondAttribute="trailing" constant="20" id="YZb-Ei-4Fd"/>
+                            <constraint firstItem="Ubp-C8-DlX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZVp-Z7-HoD"/>
+                            <constraint firstItem="Ubp-C8-DlX" firstAttribute="top" secondItem="Khg-bJ-Zdm" secondAttribute="bottom" constant="70" id="agy-ZQ-b9w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Khg-bJ-Zdm" secondAttribute="trailing" constant="20" id="iJD-ML-Pfm"/>
                             <constraint firstItem="U96-FI-CT9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t2f-Hr-Lld"/>
+                            <constraint firstItem="E2j-lf-g9x" firstAttribute="top" secondItem="U96-FI-CT9" secondAttribute="bottom" constant="50" id="yYA-5b-ufK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xER-W8-TUt"/>
+                    <navigationItem key="navigationItem" title="Tela Root" id="xER-W8-TUt"/>
                     <connections>
-                        <segue destination="YcY-pU-Raa" kind="show" identifier="Goscreen2" id="bSp-1a-svt"/>
-                        <segue destination="YcY-pU-Raa" kind="show" id="7Tc-z6-4YX"/>
+                        <outlet property="lastNameTextField" destination="Ubp-C8-DlX" id="Swg-7n-2oa"/>
+                        <outlet property="nameTextField" destination="Khg-bJ-Zdm" id="X2E-0x-tJt"/>
+                        <segue destination="5tk-sO-LA9" kind="show" identifier="Goscreen2" id="sG3-iO-xS7"/>
+                        <segue destination="ZAS-7r-kdE" kind="show" identifier="GoScreen3" id="YFL-Jq-FI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030.7692307692307" y="3.5545023696682461"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6ZD-R4-nJY">
+        <!--Tela03VC-->
+        <scene sceneID="wMV-Nf-1Gv">
             <objects>
-                <viewController id="YcY-pU-Raa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bXn-WN-hLp">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wDL-ll-FyX"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bBc-Wq-Hjn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmo-iZ-M8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Tela03VC" id="ZAS-7r-kdE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lzU-eL-TZ3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9c-Kc-RBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063.0769230769229" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="1625" y="157"/>
+        </scene>
+        <!--Tela02VC-->
+        <scene sceneID="068-uV-R4S">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Tela02VC" storyboardName="Tela02VC" id="5tk-sO-LA9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cci-E8-qmJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pj-Qs-pfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585" y="-173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="77y-ZP-62C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wsX-6A-bxv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yt3-PA-4xm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="Tela Root" id="yt3-PA-4xm">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -77,13 +128,7 @@
             <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bSp-1a-svt"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
