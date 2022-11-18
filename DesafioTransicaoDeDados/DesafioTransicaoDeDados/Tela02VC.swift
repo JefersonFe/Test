@@ -9,8 +9,25 @@ import UIKit
 
 class Tela02VC: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var lastNameLabel: UILabel!
+    
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    @IBOutlet weak var professionLabel: UILabel!
+    
+    var pessoa: Pessoa?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = pessoa?.nome
+        lastNameLabel.text = pessoa?.sobrenome
+        ageLabel.text = pessoa?.idade
+        professionLabel.text = pessoa?.profissao
+        
 
         // Do any additional setup after loading the view.
     }
